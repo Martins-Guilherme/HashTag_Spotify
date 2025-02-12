@@ -4,7 +4,7 @@ const App2 = () => {
 
 export default App2;
 
-// rafce
+// rcf
 
 //  Arrow function
 // const App2 = () => <h1> Olá mundo </h1>;
@@ -19,7 +19,7 @@ export default App2;
 // export default, posso importar com qualquer nome sem chaves.
 // export sem o default necessario importar entre chaves e com o nome exportado
 
-//  selfe close tag
+//  self closing tag
 // <Header></Header>
 // desta forma
 // <Header />
@@ -38,3 +38,14 @@ export default App2;
 
 // <> </>
 // Tag vazia em React se chama de fragment
+
+// Componentes recebem "props"
+
+// const App2 = (props) => {
+//   return <h1>Olá mundo!</h1>;
+// };
+
+//   <StrictMode>
+// Modo para potencializar a segurança e robustes
+// da aplicação, sendo assim se faz a renderização
+// duas vezes para apresentar algum error.

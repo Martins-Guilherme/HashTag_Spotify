@@ -30,7 +30,7 @@
 
 body {
   background-color: var(--green-1000);
-  color: #fff;
+  color: var(--green-50);
 }
 img {
   max-width: 100%;
@@ -163,4 +163,21 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+/* Artist */
+
+.artist {
+  padding: 1px;
+}
+
+.artist__header {
+  --_shade: hsl(0deg 0% 0% / 25%);
+
+  background-image: linear-gradient(to bottom, var(--_shade), var(--_shade)),
+    url(https://i.scdn.co/image/ab67618600001016909a162796dbc3629a1fadeb);
+}
+
+.artist__title {
+  font-size: 96px;
 }
