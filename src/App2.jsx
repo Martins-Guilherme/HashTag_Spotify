@@ -49,3 +49,34 @@ export default App2;
 // Modo para potencializar a segurança e robustes
 // da aplicação, sendo assim se faz a renderização
 // duas vezes para apresentar algum error.
+
+// Estrutura operador ternario
+
+// {items === 5 ? <>
+//   <SingleItem />
+//   <SingleItem />
+//   <SingleItem />
+//   <SingleItem />
+//   <SingleItem />
+// </> : <>
+// <SingleItem />
+// <SingleItem />
+// <SingleItem />
+// <SingleItem />
+// <SingleItem />
+// <SingleItem />
+// <SingleItem />
+// <SingleItem />
+// <SingleItem />
+// <SingleItem />
+// </>}
+
+// Array(items)
+//           .fill()
+//           .map((currentValue, index) => {
+//             return <SingleItem key={`${title}-${index}`}/>;
+//           })
+
+// Spread Operator
+// {...currObj}
+// Ele é utilizado para fazer uma copia de uma array ou objeto que temos.
