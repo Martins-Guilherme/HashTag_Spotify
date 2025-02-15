@@ -113,6 +113,10 @@ a:hover {
   box-orient: vertical;
   overflow: hidden;
 }
+.single-item:hover .single-item__2lines {
+  -webkit-line-clamp: 10;
+  line-clamp: 10;
+}
 .single-item:hover {
   text-decoration: none;
   background-color: var(--green-900);
@@ -147,9 +151,9 @@ a:hover {
   transition-property: opacity, transform;
 }
 .single-item__icon--artist {
-  position: fixed;
   opacity: 1;
   transform: translateY(0);
+  position: fixed;
   right: 25px;
   bottom: 25px;
 }
@@ -169,11 +173,20 @@ a:hover {
 
 .artist {
   padding: 1px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 10px 10px;
 }
 
 .artist__header {
   --_shade: hsl(0deg 0% 0% / 25%);
 
+  display: flex;
+  align-items: end;
+  padding: 25px;
+  height: 40svh;
+  background-size: cover;
+  background-position-y: 20%;
   background-image: linear-gradient(to bottom, var(--_shade), var(--_shade)),
     url(https://i.scdn.co/image/ab67618600001016909a162796dbc3629a1fadeb);
 }
@@ -181,3 +194,67 @@ a:hover {
 .artist__title {
   font-size: 96px;
 }
+
+.artist__body {
+  padding: 39px 25px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--green-900),
+    var(--green-1000)
+  );
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Songlist */
+
+.song-list__see-more {
+  font-weight: 700;
+  margin-left: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.song-list__see-more:hover {
+  text-decoration: underline;
+}
+
+/* SongItem */
+
+.song-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  border-radius: 10px;
+  transition: background-color ease 200ms;
+}
+
+.song-item:hover {
+  text-decoration: none;
+  background-color: var(--green-800);
+}
+
+.song-item__name:hover {
+  text-decoration: underline;
+}
+
+.song-item__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.song-item__album {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.song-item__number-album {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
