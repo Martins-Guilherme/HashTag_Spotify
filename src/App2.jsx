@@ -4,17 +4,22 @@ const App2 = () => {
 
 export default App2;
 
+// rfc
 // rcf
+// rafce
 
 //  Arrow function
 // const App2 = () => <h1> Olá mundo </h1>;
 
-// Nomeação pascal case para componentes
+// Nomeação para componentes
 //  Primeira letra em maiusculo do componente
-// Header.tsx
+// PascalCase === Header.tsx
 
 // Nomeação de variavel, função...
 // camelCase
+
+// Nomeação de classes
+// kebab-case
 
 // export default, posso importar com qualquer nome sem chaves.
 // export sem o default necessario importar entre chaves e com o nome exportado
