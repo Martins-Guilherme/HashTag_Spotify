@@ -39,9 +39,9 @@ img {
 a {
   color: inherit;
   text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 #root {
   font-family: "Montserrat", sans-serif;
@@ -85,7 +85,7 @@ a:hover {
 }
 
 /* ItemList */
-
+/*  */
 .item-list {
   display: flex;
   flex-direction: column;
@@ -128,6 +128,11 @@ a:hover {
   border-radius: var(--border-radius-l);
   transition: background-color var(--transition-function)
     var(--transition-duration);
+
+  &:hover {
+    text-decoration: none;
+    background-color: var(--green-900);
+  }
 }
 .single-item__2lines {
   display: -webkit-box;
@@ -140,10 +145,6 @@ a:hover {
 .single-item:hover .single-item__2lines {
   -webkit-line-clamp: 10;
   line-clamp: 10;
-}
-.single-item:hover {
-  text-decoration: none;
-  background-color: var(--green-900);
 }
 .single-item:hover .single-item__icon {
   opacity: 100%;
@@ -268,18 +269,21 @@ a:hover {
 }
 
 /* Songlist */
+.song-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
 
 .song-list__see-more {
   font-weight: 700;
   margin-left: 25px;
   margin-top: 20px;
   cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 }
-
-.song-list__see-more:hover {
-  text-decoration: underline;
-}
-
 /* SongItem */
 
 .song-item {
@@ -291,11 +295,11 @@ a:hover {
   border-radius: var(--border-radius-m);
   transition: background-color var(--transition-function)
     var(--transition-duration);
-}
 
-.song-item:hover {
-  text-decoration: none;
-  background-color: var(--green-800);
+  &:hover {
+    text-decoration: none;
+    background-color: var(--green-800);
+  }
 }
 
 .song-item__name:hover {
@@ -422,10 +426,11 @@ a:hover {
   transition-property: transform;
   transition-timing-function: var(--transition-function);
   transition-duration: var(--transition-duration);
-}
-.player__icon:hover {
-  transform: scale(5%);
-  color: var(--green-300);
+
+  &:hover {
+    transform: scale(105%);
+    color: var(--green-300);
+  }
 }
 .player__icon--play {
   font-size: 35px;

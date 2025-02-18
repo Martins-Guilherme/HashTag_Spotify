@@ -85,3 +85,11 @@ export default App2;
 // Spread Operator
 // {...currObj}
 // Ele é utilizado para fazer uma copia de uma array ou objeto que temos.
+
+// Quando componentes se re-renderizam?
+/*
+  Uma das ocasiões é quando uma váriavel de estado usada por esse componente é atualizada.
+  Outra ocasião é quando uma propriedade passada para o componente é atualizada.
+ */
+
+  // Hook - useState
